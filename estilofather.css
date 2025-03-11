@@ -14,7 +14,6 @@ body {
  /* background-size: 10000px; para que la imagen de fondo se vea en toda la pantalla */
     max-width: auto;
     display:inline-block;
-    font-family: "Rock Salt", cursive;
     font-size: 20px;
    margin: 0;
 }
