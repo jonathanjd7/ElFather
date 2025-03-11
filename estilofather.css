@@ -1,5 +1,5 @@
 html {
-  height: auto;
+    height: auto;
   width: auto;
 }
 
@@ -11,52 +11,62 @@ body {
 
   /*background: url(https://wallpapers.com/images/featured/whatsapp-3d9aa7qsppakwbww.webp); */
   background-repeat: no-repeat; /*para que no se repita la imagen si fuere pequeña */
- /* background-size: 10000px; para que la imagen de fondo se vea en toda la pantalla */
-    max-width: auto;
-    display:inline-block;
-    font-size: 20px;
-   margin: 0;
+  /* background-size: 10000px; para que la imagen de fondo se vea en toda la pantalla */
+  max-width: auto;
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 20px;
 }
+
 /*BARRA DE NAVEGACION */
 
 nav {
-    display: flex; /*esto es la clave para que la barra de navegacion salga centrada*/
-    text-align: center;
-    justify-content: center;
-    gap: 20px;
-    background-color: #b0f709;
-  }
-  nav ul {
-    list-style: none;
-    overflow: hidden;
-    text-align: center;
-  }
-  nav ul li {
-    float: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-align: center;
-  }
-  nav ul li a {
-    text-align: center;
-    display: block;
-    padding: 20px;
-    text-align: center;
-    color: #f71010;
-    text-decoration: none;
-  }
-  nav ul li:hover {
-    text-align: center;
-    background: #eca023;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex; /*esto es la clave para que la barra de navegacion salga centrada*/
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #b0f709;
+  z-index: 1000;
+}
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  text-align: center;
+}
+nav ul li {
+  float: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+nav ul li a {
+  text-align: center;
+  display: block;
+  padding: 20px;
+  text-align: center;
+  color: #f71010;
+  text-decoration: none;
+  margin: 0px;
+}
+nav ul li:hover {
+  text-align: center;
+  background: #eca023;
 }
 /*--Fin de la barra de navegacion--*/
-/*--Inicio de la cabecera de la pagina--*/  
+/*--Inicio de la cabecera de la pagina--*/
 h1 {
   text-align: center;
   color: whitesmoke;
   background-color: rgb(55, 214, 132);
-  padding: 30px 20px;
+  padding: 20px 20px;
   margin: 0px;
+  /* para */
   border: 5px inset blueviolet; /*dashed para el borde diferente || dooted, solid,
             ridge, groove, inset, outset*/
   border-radius: 20em;
@@ -103,6 +113,7 @@ span.vida {
   background-color: rgb(188, 227, 214);
   display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
+  text-align: center;
 }
 span.father {
   border-radius: 2em 1em 4em / 0.5em 3em; /*para hacer los bordes diferentes*/
@@ -117,7 +128,6 @@ span.father {
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
 }
 span.discografia {
-
   display: grid;
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
@@ -131,10 +141,9 @@ span.discografia {
   padding-left: 10px;
   padding-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
- 
 }
 div.container {
-  display: grid;
+  display: -ms-inline-grid; /*Para que los videos salgan en linea pero sin dañar el div */
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
   border-radius: 2em 1em 4em / 0.5em 3em; /*para hacer los bordes diferentes*/
@@ -159,7 +168,6 @@ table {
   border: 3px solid purple;
   margin: auto;
   text-align: center;
-  
 }
 tbody tr:nth-child(odd) {
   background-color: #5533ff;
@@ -214,8 +222,7 @@ caption {
   letter-spacing: 1px;
 }
 
-
-  /*Footer*/
+/*Footer*/
 footer {
   text-align: center;
   text-decoration: solid;
@@ -249,3 +256,4 @@ footer {
     max-width: auto; /* Imágenes aún más pequeñas en móviles */
   }
 }
+
