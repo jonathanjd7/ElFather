@@ -32,6 +32,12 @@
                 de la historia de ese género.
                 Durante su carrera musical formó parte del dúo Héctor & Tito
                 y posteriormente continuó como solista. </p>
+                <p>Detrás de esa figura imponente que proyectaba poder y éxito,
+                     se encontraba un hombre en constante lucha interna. A pesar de estar rodeado de lujos y de una legión de seguidores,
+                      Héctor enfrentaba demonios personales que lo llevaron a situaciones extremas, incluyendo varios intentos de suicidio. 
+                      El precio de la fama, como él mismo reconoció, lo había sumido en un abismo del que parecía no haber salida.
+
+                </p>
                 <p>En su retiro como cantante de música secular,
                 se convirtió al cristianismo para dedicarse a ser pastor.
                </p>
@@ -246,10 +252,20 @@
 		
     </section>
     <section class="audio1">
- <audio controls loop autoplay>
-    <source src="Hector El Father Ft. Yomo - Dejale Caer To El Peso.mp3">
-    Audio
-    </audio>
+        <audio id="miAudio" controls loop autoplay>
+            <source src="Hector El Father Ft. Yomo - Dejale Caer To El Peso.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let audio = document.getElementById("miAudio");
+                audio.play().catch(error => {
+                    console.log("El navegador bloqueó la reproducción automática. Requiere interacción del usuario.");
+                });
+            });
+        </script>
+        
     </section>
 	<footer>
 		Jonathan JD 2024 &copy;
