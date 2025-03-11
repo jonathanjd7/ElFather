@@ -11,8 +11,47 @@ body {
 
   /*background: url(https://wallpapers.com/images/featured/whatsapp-3d9aa7qsppakwbww.webp); */
   background-repeat: no-repeat; /*para que no se repita la imagen si fuere pequeña */
-  background-size: 10000px; /*para que la imagen de fondo se vea en toda la pantalla */
+ /* background-size: 10000px; para que la imagen de fondo se vea en toda la pantalla */
+    max-width: auto;
+    display:inline-block;
+    font-family: "Rock Salt", cursive;
+    font-size: 20px;
+   margin: 0;
 }
+/*BARRA DE NAVEGACION */
+
+nav {
+    display: flex; /*esto es la clave para que la barra de navegacion salga centrada*/
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #b0f709;
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+  }
+  nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+  }
+  nav ul li a {
+    text-align: center;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    color: #f71010;
+    text-decoration: none;
+  }
+  nav ul li:hover {
+    text-align: center;
+    background: #eca023;
+}
+/*--Fin de la barra de navegacion--*/
+/*--Inicio de la cabecera de la pagina--*/  
 h1 {
   text-align: center;
   color: whitesmoke;
@@ -51,7 +90,6 @@ span.history {
   padding-top: 0px;
   padding-right: 10px;
   padding-left: 10px;
-  text-justify: auto;
   background-color: rgb(188, 227, 214);
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
 }
@@ -71,41 +109,46 @@ span.father {
   border-radius: 2em 1em 4em / 0.5em 3em; /*para hacer los bordes diferentes*/
   border: 1px solid rgb(0, 255, 170);
   opacity: 0.9; /*Para la tranparencia de la pagina */
-  margin: 30px;
+  margin: 20px;
   padding-top: 0px;
-  padding-right: 300px;
-  padding-left: 300px;
-  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
   background-color: rgb(188, 227, 214);
   display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
 }
 span.discografia {
+
+  display: grid;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
   border-radius: 2em 1em 4em / 0.5em 3em; /*para hacer los bordes diferentes*/
   border: 1px solid rgb(0, 255, 170);
   opacity: 0.9; /*Para la tranparencia de la pagina */
+  background-color: rgb(188, 227, 214);
   margin: 20px;
   padding-top: 0px;
-  padding-right: 580px;
-  padding-left: 500px;
-  padding-bottom: 20px;
-  background-color: rgb(188, 227, 214);
-  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
+ 
 }
 div.container {
+  display: grid;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
   border-radius: 2em 1em 4em / 0.5em 3em; /*para hacer los bordes diferentes*/
   border: 1px solid rgb(0, 255, 170);
   opacity: 0.9; /*Para la tranparencia de la pagina */
   margin: 20px;
   padding-top: 0px;
-  padding-right: 460px;
-  padding-left: 460px;
-  padding-bottom: 20px;
-  margin: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
   background-color: rgb(188, 227, 214);
-  display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
+  text-align: center;
 }
 
 /*--Tabla 1 no hace falta poner .badboy por ejemplo*/
@@ -116,6 +159,8 @@ table {
   border-collapse: collapse;
   border: 3px solid purple;
   margin: auto;
+  text-align: center;
+  
 }
 tbody tr:nth-child(odd) {
   background-color: #5533ff;
@@ -170,40 +215,8 @@ caption {
   letter-spacing: 1px;
 }
 
-/*BARRA DE NAVEGACION */
-
-nav {
-  display: flex; /*esto es la clave para que la barra de navegacion salga centrada*/
-  text-align: center;
-  justify-content: center;
-  gap: 20px;
-  background-color: #b0f709;
-}
-nav ul {
-  list-style: none;
-  overflow: hidden;
-  text-align: center;
-}
-nav ul li {
-  float: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-align: center;
-}
-nav ul li a {
-  text-align: center;
-  display: block;
-  padding: 20px;
-  text-align: center;
-  color: #f71010;
-  text-decoration: none;
-}
-nav ul li:hover {
-  text-align: center;
-  background: #eca023;
 
   /*Footer*/
-}
 footer {
   text-align: center;
   text-decoration: solid;
