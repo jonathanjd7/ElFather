@@ -1,5 +1,5 @@
 html {
-    height: auto;
+  height: auto;
   width: auto;
 }
 
@@ -22,17 +22,22 @@ body {
 /*BARRA DE NAVEGACION */
 
 nav {
-  position: sticky;
+  position: sticky; /* Fijamos el menú para que siempre esté visible */
   top: 0;
   left: 0;
   width: 100%;
-  padding: 5px;
-  display: flex; /*esto es la clave para que la barra de navegacion salga centrada*/
-  text-align: center;
-  justify-content: center;
-  gap: 20px;
   background-color: #b0f709;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 30px; /* Ajustamos la altura */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px; /* Ajustamos el padding */
+  line-height: 40px; /* Asegura que el texto se alinee bien */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 nav ul {
   list-style: none;
@@ -48,16 +53,26 @@ nav ul li {
 nav ul li a {
   text-align: center;
   display: block;
-  padding: 20px;
-  text-align: center;
+  padding: 10px;
   color: #f71010;
   text-decoration: none;
   margin: 0px;
 }
-nav ul li:hover {
+nav ul li a img {
+  width: 30px;
   text-align: center;
+  margin-top: 10px;
+}
+nav ul li:hover {
+  text-align: cent11er;
   background: #eca023;
 }
+
+#imagenes {
+  display: block;
+  margin: auto;
+}
+
 /*--Fin de la barra de navegacion--*/
 /*--Inicio de la cabecera de la pagina--*/
 h1 {
@@ -113,7 +128,6 @@ span.vida {
   background-color: rgb(188, 227, 214);
   display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
-  text-align: center;
 }
 span.father {
   border-radius: 2em 1em 4em / 0.5em 3em; /*para hacer los bordes diferentes*/
@@ -143,20 +157,35 @@ span.discografia {
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
 }
 div.container {
-  display: -ms-inline-grid; /*Para que los videos salgan en linea pero sin dañar el div */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
+  display: flex; /*Para que los videos salgan en linea pero sin dañar el div */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: auto;
+
   border-radius: 2em 1em 4em / 0.5em 3em; /*para hacer los bordes diferentes*/
   border: 1px solid rgb(0, 255, 170);
   opacity: 0.9; /*Para la tranparencia de la pagina */
   margin: 20px;
-  padding-top: 0px;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
   background-color: rgb(188, 227, 214);
   box-shadow: rgba(0, 0, 0, 0.4) 10px 10px;
+}
+
+div.linea {
+  width: auto;
+  height: auto;
   text-align: center;
+}
+
+#letras1 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px; /* Espacio entre el encabezado y los divs */
 }
 
 /*--Tabla 1 no hace falta poner .badboy por ejemplo*/
@@ -256,4 +285,3 @@ footer {
     max-width: auto; /* Imágenes aún más pequeñas en móviles */
   }
 }
-
